@@ -13,7 +13,10 @@ function move(delta) {
 		return;
 	}
 	index = Math.min(Math.max(index, 0), links.length-1);
-	links[index].focus();
+	if(links[index]) {
+		links[index].focus();
+//		console.log("focus", links[index]);
+	}
 }
 
 $(function() {
@@ -25,7 +28,10 @@ $(function() {
 	//console.log("next", goNext);
 
 	$(window).keydown(function(e) {
-		//console.log("keyDown", e.keyCode);
+//		console.log("keyDown", e.keyCode, "focus", $(":focus").prop("tagName"));
+//		console.log("index", index);
+		if($(":focus").prop("tagName")=="INPUT") return true;
+
 		if(e.keyCode==74) {
 			// j (down)
 			move(1);
@@ -34,6 +40,11 @@ $(function() {
 		if(e.keyCode==75) {
 			// k (up)
 			move(-1);
+			return false;
+		}
+		if(e.keyCode==191) {
+			// / (focus search box)
+			$("input.gLFyf.gsfi").focus();
 			return false;
 		}
 		return true;

@@ -1,7 +1,7 @@
 {
 	"name": "TapiocaJK",
-	"version": "1.0.0",
-	"description": "Simple J, K shortcuts in Google search results. J: focus next link or load next page. K: focus previous link or load previous page.",
+	"version": "2.0.0",
+	"description": "Simple J, K shortcuts in Google search results.",
 	"manifest_version": 2,
 	"icons": {
 		"128": "icon128.png"

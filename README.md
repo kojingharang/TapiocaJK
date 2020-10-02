@@ -7,4 +7,5 @@ Simple J, K shortcuts in Google search results.
 ```
 J: focus next link or load next page.
 K: focus previous link or load previous page.
+/: focus search bar.
 ```
