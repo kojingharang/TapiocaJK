@@ -15,7 +15,9 @@ function move(delta) {
 	index = Math.min(Math.max(index, 0), links.length-1);
 	if(links[index]) {
 		links[index].focus();
-//		console.log("focus", links[index]);
+		for(var i=0;i<links.length;i++) links[i].style.outline = "";
+		links[index].style.outline = "ridge 1px";
+		//console.log("focus", links[index]);
 	}
 }
 
