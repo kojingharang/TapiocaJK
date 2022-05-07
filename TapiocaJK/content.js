@@ -22,7 +22,7 @@ function move(delta) {
 }
 
 $(function() {
-	links = $("div.g div.yuRUbf a:not([class])");
+	links = $("div.g div.yuRUbf > a:not([class])");
 	goBack = $("a#pnprev").attr("href");
 	goNext = $("a#pnnext").attr("href");
 	//console.log("links", links)

@@ -1,8 +1,8 @@
 {
 	"name": "TapiocaJK",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "Simple J, K shortcuts in Google search results.",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"icons": {
 		"128": "icon128.png"
 	},
