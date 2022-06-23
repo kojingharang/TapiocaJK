@@ -3,15 +3,19 @@ var goBack, goNext;
 var index = 0;
 
 function move(delta) {
-	index += delta;
-	if(index==-1 && goBack) {
+	if(links.length==0) return;
+//	console.log("index", index, "delta", delta, "links", links, "goBack", goBack, "goNext", goNext);
+
+	if(index==0 && goBack) {
 		window.location.href = goBack;
 		return;
 	}
-	if(index==links.length && goNext) {
+	if(index==links.length-1 && goNext) {
 		window.location.href = goNext;
 		return;
 	}
+
+	index += delta;
 	index = Math.min(Math.max(index, 0), links.length-1);
 	if(links[index]) {
 		links[index].focus();
