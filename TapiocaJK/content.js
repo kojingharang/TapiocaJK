@@ -34,9 +34,10 @@ $(function() {
 //	console.log("next", goNext);
 
 	$(window).keydown(function(e) {
-//		console.log("keyDown", e.keyCode, "focus", $(":focus").prop("tagName"));
+//		console.log("keyDown", e.keyCode);
+//		console.log("focus", $(":focus"), $(":focus").prop("tagName"));
 //		console.log("index", index);
-		if($(":focus").prop("tagName")=="INPUT") return true;
+		if($(":focus").prop("tagName")=="TEXTAREA") return true;
 
 		if(e.keyCode==74) {
 			// j (down)
