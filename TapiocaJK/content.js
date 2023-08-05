@@ -26,7 +26,8 @@ function move(delta) {
 }
 
 $(function() {
-	links = $("div.g div.yuRUbf > a:not([class])");
+//	links = $("div.g div.yuRUbf > a:not([class])");
+	links = $("div.kvH3mc div.yuRUbf a");
 	goBack = $("a#pnprev").attr("href");
 	goNext = $("a#pnnext").attr("href");
 //	console.log("links", links)
@@ -49,11 +50,11 @@ $(function() {
 			move(-1);
 			return false;
 		}
-		if(e.keyCode==191) {
-			// / (focus search box)
-			$("input.gLFyf.gsfi").focus();
-			return false;
-		}
+//		if(e.keyCode==191) {
+//			// / (focus search box)
+//			$("input.gLFyf.gsfi").focus();
+//			return false;
+//		}
 		return true;
 	});
 	move(0);
